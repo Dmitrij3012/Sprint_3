@@ -8,8 +8,7 @@ from locators import Locators
 
 class TestLogOut:
 
-    def test_log_out_from_account(self, login):
-        driver = login
+    def test_log_out_from_account(self, login, driver):
         driver.find_element(*Locators.PERSONAL_ACCOUNT_BUTTON).click()
         WebDriverWait(driver, 3).until(EC.visibility_of_element_located(Locators.LOG_OUT_BUTTON))
         driver.find_element(*Locators.LOG_OUT_BUTTON).click()

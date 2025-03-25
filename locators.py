@@ -91,3 +91,4 @@ class Locators:
         By.XPATH,
         "//span[text()='Начинки']/parent::div"
     )  # локатор родителя раздела Начинки
+    SECTION_CLASS = 'tab_tab_type_current__2BEPc'  # значение класса для проверки разделов «Булки», «Соусы», «Начинки».
